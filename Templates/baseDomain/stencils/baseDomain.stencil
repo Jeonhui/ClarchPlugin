@@ -10,7 +10,7 @@
 import ClarchPlugin
 
 {% if name != "" %}
-nonisolated(unsafe) let project: Project = .baseDomain(moduleName: "{{ name }}")
+let project: Project = .baseDomain(moduleName: "{{ name }}")
 {% else %}
-nonisolated(unsafe) let project: Project = .baseDomain()
+let project: Project = .baseDomain()
 {% endif %}

@@ -10,7 +10,7 @@ import ProjectDescription
 extension Path {
     func appending(_ path: String) -> Path {
         let newPath = "\(self.pathString)/\(path)"
-            .replacingOccurrences(of: "//", with: "/")
+            .replacing("//", with: "/")
         return switch self.type{
         case .relativeToCurrentFile: .relativeToCurrentFile(newPath)
         case .relativeToManifest: .relativeToManifest(newPath)

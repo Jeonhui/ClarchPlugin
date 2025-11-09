@@ -10,7 +10,7 @@
 import ClarchPlugin
 
 {% if name != "" %}
-nonisolated(unsafe) let project: Project = .coordinatorInterface(moduleName: "{{ name }}")
+let project: Project = .coordinatorInterface(moduleName: "{{ name }}")
 {% else %}
-nonisolated(unsafe) let project: Project = .coordinatorInterface()
+let project: Project = .coordinatorInterface()
 {% endif %}

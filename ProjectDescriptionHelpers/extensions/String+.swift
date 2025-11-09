@@ -5,6 +5,8 @@
 //  Created by Jeonhui on 3/20/25.
 //
 
+import Foundation
+
 extension String {
     var capitalizedFirst: String {
         prefix(1).capitalized + dropFirst()

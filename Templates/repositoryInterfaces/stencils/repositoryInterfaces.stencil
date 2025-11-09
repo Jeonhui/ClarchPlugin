@@ -10,7 +10,7 @@
 import ClarchPlugin
 
 {% if name != "" %}
-nonisolated(unsafe) let project: Project = .repositoryInterfaces(
+let project: Project = .repositoryInterfaces(
     moduleName: "{{ name }}",
     {% if repositoryNames != "" %}
     repositoryTargetNames: [
@@ -24,7 +24,7 @@ nonisolated(unsafe) let project: Project = .repositoryInterfaces(
     {% endif %}
 )
 {% else %}
-nonisolated(unsafe) let project: Project = .repositoryInterfaces(
+let project: Project = .repositoryInterfaces(
     {% if repositoryNames != "" %}
     repositoryTargetNames: [
     {% for item in repositoryNames|split:"," %}

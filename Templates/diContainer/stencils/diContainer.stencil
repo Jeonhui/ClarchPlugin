@@ -10,7 +10,7 @@
 import ClarchPlugin
 
 {% if name != "" %}
-nonisolated(unsafe) let project: Project = .diContainer(moduleName: "{{ name }}")
+let project: Project = .diContainer(moduleName: "{{ name }}")
 {% else %}
-nonisolated(unsafe) let project: Project = .diContainer()
+let project: Project = .diContainer()
 {% endif %}

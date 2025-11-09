@@ -9,4 +9,4 @@
 @preconcurrency import ProjectDescription
 import ClarchPlugin
 
-nonisolated(unsafe) let project: Project = .shared(moduleName: "{{ name }}")
+let project: Project = .shared(moduleName: "{{ name }}")
